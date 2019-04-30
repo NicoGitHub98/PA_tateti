@@ -1,0 +1,179 @@
+@font-face {
+    font-family: fuenteImpact;
+    src: url('impact.ttf');
+}
+@font-face {
+    font-family: fuenteFranklin;
+    src: url('FranklinGothicMediumRegular.ttf');
+}
+@keyframes fadein {
+    from { background-color: rgba(0, 255, 41, 0); }
+    to   { background-color: rgba(0, 255, 41, 1); }
+}
+#divContenedorBotones{
+    text-align: center;
+}
+#mostrarHistorico{
+    visibility: hidden;
+    background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+    background-color: #1acc1a;
+    border-color: #1acc1a;
+}
+#ocultarHistorico{
+    visibility: hidden; 
+}
+#avisos{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: fuenteImpact;
+}
+#textoFin{
+    position: relative;
+    top:50%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-family: fuenteFranklin;
+}
+#banner{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(150, 150, 150,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+}
+#botonContinuar{
+    width: 20%;
+    height: 8%;
+    margin: auto;
+    background-color: palegreen;
+    border-radius: 30%;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    top: 50%;
+    visibility: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#botonContinuar:hover{
+    cursor: pointer;
+}
+#contenedor{
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    padding-left: 25px;
+}
+div[id^="celda"]{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: -2px;
+}
+#celda1{
+    border-right: 3px orangered solid;
+    border-bottom: 3px orangered solid;
+}
+#celda2{
+    border-left: 3px orangered solid;
+    border-right: 3px orangered solid;
+    border-bottom: 3px orangered solid;
+}
+#celda3{
+    border-left: 3px orangered solid;
+    border-bottom: 3px orangered solid;
+}
+#celda4{
+    border-top: 3px orangered solid;
+    border-right: 3px orangered solid;
+    border-bottom: 3px orangered solid;
+}
+#celda5{
+    border: 3px orangered solid;
+}
+#celda6{
+    border-top: 3px orangered solid;
+    border-left: 3px orangered solid;
+    border-bottom: 3px orangered solid;
+}
+#celda7{
+    border-right: 3px orangered solid;
+    border-top: 3px orangered solid;
+}
+#celda8{
+    border-top: 3px orangered solid;
+    border-right: 3px orangered solid;
+    border-left: 3px orangered solid;
+}
+#celda9{
+    border-top: 3px orangered solid;
+    border-left: 3px orangered solid;
+}
+#panelLateral{
+    width: 0;
+    position: fixed;
+    padding-left: 5px;
+    padding-top: 0px;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#panelLateral span{
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+#closebtn{
+    visibility: hidden;
+    text-align: right;
+    line-height: 0.55em;
+    margin: 0px;
+    width: 10px;
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    display: block;
+}
+#mostrarHistorico:disabled{
+    box-shadow: inset 2px 2px 5px 1px rgba(0,0,0,0.75);
+    background-color: #1a741a;
+    border-color: #1a741a;
+}
+#divHistorico{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+#actualizarHistorico{
+    display: none;
+    color: white;
+    display: block;
+    width: fit-content;
+    border-radius: 30%;
+    cursor: pointer;
+    margin: auto;
+    background-color: #269CE9;
+    border-color: #269CE9;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
